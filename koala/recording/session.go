@@ -11,6 +11,7 @@ import (
 )
 
 type Session struct {
+	StartTime           int64
 	Context             string
 	ThreadId            int32
 	SessionId           string
@@ -27,6 +28,7 @@ type Session struct {
 
 func NewSession(threadId int32) *Session {
 	return &Session{
+		StartTime: time.Now().Unix(),
 		ThreadId:  threadId,
 		SessionId: fmt.Sprintf("%d-%d", time.Now().UnixNano(), threadId),
 	}
