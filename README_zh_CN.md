@@ -1,7 +1,7 @@
 <h1 align="center">RDebug - Real Debugger</h1>
 
 [![Gitter](https://badges.gitter.im/didi/rdebug.svg)](https://gitter.im/didi/rdebug?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/didi/rdebug/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/mengqingchao/rdebug/blob/master/LICENSE)
 
 ## 一、简介
 
@@ -56,14 +56,14 @@ $ LD_PRELOAD="/path/to/koala-libc.so /usr/lib64/libcurl.so.4" /path/to/sbin/php-
 
 ```shell
 # 直接用源码回放
-$ git clone https://github.com/didi/rdebug.git
+$ git clone https://github.com/mengqingchao/rdebug.git
 $ cd rdebug/php/midi
 $ sh install.sh
 $ cd /path/to/your/project
 $ /path/to/rdebug/php/midi/bin/midi run -f RECORD-SESSION-FILE
 
 # 或，使用 phar 包回放
-$ wget -O midi.phar -q https://github.com/didi/rdebug/raw/master/output/bin/midi.phar
+$ wget -O midi.phar -q https://github.com/mengqingchao/rdebug/raw/master/output/bin/midi.phar
 $ midi.phar run -f RECORD-SESSION-FILE
 
 # 或，Composer 全局安装 midi（相比安装到项目中，推荐全局安装）
@@ -267,7 +267,7 @@ $ ./vendor/bin/midi -f RECORD-SESSION-FILE
 ### 6.2 文档列表
 
 * [Documentation](./doc/DocList.md)
-* [Wiki](https://github.com/didi/rdebug/wiki)
+* [Wiki](https://github.com/mengqingchao/rdebug/wiki)
 
 ### 6.3 如何贡献
 

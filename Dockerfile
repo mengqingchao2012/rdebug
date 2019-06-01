@@ -5,8 +5,8 @@ FROM bitnami/minideb-extras:jessie-buildpack as BUILD
 ARG gopath_default
 ENV GOPATH=$gopath_default
 ENV PATH=$GOPATH/bin:/opt/bitnami/go/bin:$PATH
-WORKDIR $GOPATH/src/github.com/didi/rdebug
-COPY . $GOPATH/src/github.com/didi/rdebug
+WORKDIR $GOPATH/src/github.com/mengqingchao/rdebug
+COPY . $GOPATH/src/github.com/mengqingchao/rdebug
 
 RUN mkdir -p $GOPATH/bin && bitnami-pkg install go-1.8.3-0 --checksum 557d43c4099bd852c702094b6789293aed678b253b80c34c764010a9449ff136
 RUN curl https://glide.sh/get | sh && bitnami-pkg install nginx-1.14.0-0
@@ -21,8 +21,8 @@ WORKDIR /usr/local/var/koala
 COPY ./php/midi /usr/local/var/midi
 COPY --from=BUILD /opt/bitnami/nginx/sbin /opt/bitnami/nginx/sbin
 COPY --from=BUILD /bitnami/nginx/conf /opt/bitnami/nginx/conf
-COPY --from=BUILD $gopath_default/src/github.com/didi/rdebug/output/libs/*.so /usr/local/var/koala/
-COPY --from=BUILD $gopath_default/src/github.com/didi/rdebug/output/libs/koala-replayer.so /usr/local/var/midi/res/replayer/
+COPY --from=BUILD $gopath_default/src/github.com/mengqingchao/rdebug/output/libs/*.so /usr/local/var/koala/
+COPY --from=BUILD $gopath_default/src/github.com/mengqingchao/rdebug/output/libs/koala-replayer.so /usr/local/var/midi/res/replayer/
 COPY ./composer.json /usr/local/var/midi/composer.json
 COPY ./example/php/nginx.conf /opt/bitnami/nginx/conf
 COPY ./example/php/index.php /usr/local/var/koala/index.php

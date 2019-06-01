@@ -4,7 +4,7 @@ Thanks for considering to contribute this project. All issues and pull requests 
 
 ## Report Issue
 
-Reporting an [issue](https://github.com/didi/rdebug/issues) is welcomed. But do please include the following details
+Reporting an [issue](https://github.com/mengqingchao/rdebug/issues) is welcomed. But do please include the following details
 
 1. Environment (OS version, rdebug version and so on)
 2. Issue description, error logs

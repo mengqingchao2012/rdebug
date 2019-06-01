@@ -20,10 +20,10 @@ class UpdateCommand extends Command
 {
     const CMD = 'update';
 
-    const URL_VERSION_TXT_UNSTABLE = 'https://github.com/didi/rdebug/raw/master/php/midi/version-dev.txt';
-    const URL_MIDI_UNSTABLE = 'https://github.com/didi/rdebug/raw/master/output/bin/midi-dev.phar';
-    const URL_VERSION_TXT_STABLE = 'https://github.com/didi/rdebug/raw/master/php/midi/version.txt';
-    const URL_MIDI_STABLE = 'https://github.com/didi/rdebug/raw/master/output/bin/midi.phar';
+    const URL_VERSION_TXT_UNSTABLE = 'https://github.com/mengqingchao/rdebug/raw/master/php/midi/version-dev.txt';
+    const URL_MIDI_UNSTABLE = 'https://github.com/mengqingchao/rdebug/raw/master/output/bin/midi-dev.phar';
+    const URL_VERSION_TXT_STABLE = 'https://github.com/mengqingchao/rdebug/raw/master/php/midi/version.txt';
+    const URL_MIDI_STABLE = 'https://github.com/mengqingchao/rdebug/raw/master/output/bin/midi.phar';
 
     /**
      * path to res dir in the phar `midi`

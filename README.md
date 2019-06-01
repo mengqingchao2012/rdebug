@@ -1,7 +1,7 @@
 <h1 align="center">RDebug - Real Debugger</h1>
 
 [![Gitter](https://badges.gitter.im/didi/rdebug.svg)](https://gitter.im/didi/rdebug?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/didi/rdebug/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/mengqingchao/rdebug/blob/master/LICENSE)
 
 ## Translation
 
@@ -60,14 +60,14 @@ Three ways to replay: replay from source, replay by midi.phar, replay by compose
 
 ```shell
 # Source
-$ git clone https://github.com/didi/rdebug.git
+$ git clone https://github.com/mengqingchao/rdebug.git
 $ cd rdebug/php/midi
 $ sh install.sh
 $ cd /path/to/your/project
 $ /path/to/rdebug/php/midi/bin/midi run -f RECORD-SESSION-FILE
 
 # Or, Phar
-$ wget -O midi.phar -q https://github.com/didi/rdebug/raw/master/output/bin/midi.phar
+$ wget -O midi.phar -q https://github.com/mengqingchao/rdebug/raw/master/output/bin/midi.phar
 $ midi.phar run -f RECORD-SESSION-FILE
 
 # Or, Composer global
@@ -268,7 +268,7 @@ For more details: [Midi](./php/midi/README.md)。
 ### 6.2 Documentation
 
 * [Documentation](./doc/DocList.md)
-* [Wiki](https://github.com/didi/rdebug/wiki)
+* [Wiki](https://github.com/mengqingchao/rdebug/wiki)
 
 ### 6.3 Contribute
 

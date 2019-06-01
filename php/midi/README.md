@@ -31,7 +31,7 @@ Midi 像 Composer 一样，是一个 PHP Phar 包，优点如下：
 下载 bin/midi.phar 到 macOS 环境：
 
 ```shell
-$ wget -O midi.phar -q https://github.com/didi/rdebug/raw/master/output/bin/midi.phar
+$ wget -O midi.phar -q https://github.com/mengqingchao/rdebug/raw/master/output/bin/midi.phar
 ```
 
 到模块回放：
@@ -42,7 +42,7 @@ $ git clone https://your-project-code.git
 $ cd your-project-code
 $ composer install -o --no-dev # 如果使用 composer
 
-# 配置项目，见第 3 章节，也可参考 https://github.com/didi/rdebug/blob/master/doc/midi/Replay-file.md
+# 配置项目，见第 3 章节，也可参考 https://github.com/mengqingchao/rdebug/blob/master/doc/midi/Replay-file.md
 
 # 回放流量
 # -f 回放指定文件

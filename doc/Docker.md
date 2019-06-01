@@ -3,7 +3,7 @@
 ## Build
 
 ```
-$ git clone https://github.com/didi/rdebug.git
+$ git clone https://github.com/mengqingchao/rdebug.git
 $ cd rdebug
 $ docker build -t local-rdebug-docker .
 ``` 

@@ -1,12 +1,12 @@
 # Record Traffic & Replay
 
-Example code and config at [example/php](https://github.com/didi/rdebug/tree/master/example/php) directory.
+Example code and config at [example/php](https://github.com/mengqingchao/rdebug/tree/master/example/php) directory.
 
 This example needs nginx & php-fpm, you should install first.
 
 ## Nginx Config
 
-[nginx.conf](https://github.com/didi/rdebug/blob/master/example/php/nginx.conf)
+[nginx.conf](https://github.com/mengqingchao/rdebug/blob/master/example/php/nginx.conf)
 
 Webroot at `/usr/local/var/koala` and listen port `9111`.
 
@@ -61,7 +61,7 @@ clear_env = no
 
 ## index.php
 
-Service entry point at [`/usr/local/var/koala/index.php`](https://github.com/didi/rdebug/blob/master/example/php/index.php):
+Service entry point at [`/usr/local/var/koala/index.php`](https://github.com/mengqingchao/rdebug/blob/master/example/php/index.php):
 
 ```php
 <?php
@@ -86,8 +86,8 @@ Example code just curl `http://php.net/get-involved.php`.
 
 ## Compile `koala-libc.so` & `koala-recorder.so`
 
-- [Compile koala-libc.so](https://github.com/didi/rdebug#42-compile-koala-libc)
-- [Compile koala-recorder.so](https://github.com/didi/rdebug#43-compile-koala)
+- [Compile koala-libc.so](https://github.com/mengqingchao/rdebug#42-compile-koala-libc)
+- [Compile koala-recorder.so](https://github.com/mengqingchao/rdebug#43-compile-koala)
 
 If you don't want to compile and record, this example also provide a recorded session [1548160113499755925-1158745](./1548160113499755925-1158745), just go to [replay session](#replay-session).
 
@@ -141,7 +141,7 @@ index.php        koala-libc.so     koala-recorder.so
 
 After first access, we can not find any record session.
  
-Because session was separated by request begin message (FCGI_BEGIN_REQUEST prefix is [`11`](https://github.com/didi/rdebug/blob/master/koala/cmd/recorder/main.go#L31)).
+Because session was separated by request begin message (FCGI_BEGIN_REQUEST prefix is [`11`](https://github.com/mengqingchao/rdebug/blob/master/koala/cmd/recorder/main.go#L31)).
 
 When php-fpm get next request, recorder.so will finish last session and save to file.
 
@@ -284,7 +284,7 @@ $ /path/to/rdebug/php/midi/bin/midi run -f 1548073294845473414-6556170 -ORT
 $ midi.phar run -f 1548073294845473414-6556170 -ORT
 ```
 
-Config [Documentation](https://github.com/didi/rdebug/blob/master/doc/midi/Config-en-US.md) / [中文文档](https://github.com/didi/rdebug/blob/master/doc/midi/Config.md).
+Config [Documentation](https://github.com/mengqingchao/rdebug/blob/master/doc/midi/Config-en-US.md) / [中文文档](https://github.com/mengqingchao/rdebug/blob/master/doc/midi/Config.md).
 
 ### 2. How to check inject works
 
